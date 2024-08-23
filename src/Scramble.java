@@ -17,15 +17,6 @@ public class Scramble {
         return scrambledWord.toString();
     }
 
-    /*
-    Original: ABRACADABRA
-              012345678910
-    MINE:     BARCA
-    Expected :BARCADABARA
-Actual   :BARCAADBARA
-          012345678910
-     */
-
     public static void scrambleOrRemove(List<String> wordList) {
         for (int i=0; i<wordList.size(); i++) {
             if (scrambleWord(wordList.get(i)).equals(wordList.get(i))) {
